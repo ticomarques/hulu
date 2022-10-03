@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import HeaderItem from './HeaderItem'
 
@@ -15,12 +15,10 @@ function Header() {
             <HeaderItem title="SEARCH" Icon={SearchIcon} />
             <HeaderItem title="ACCOUNT" Icon={UserIcon} />
         </div>
-        <Image 
+        <img 
             src="https://links.papareact.com/ua6"
             alt="data"
-            width={200}
-            height={100}
-            className="object-contain"
+            className="object-contain h-24 w-48"
         />
     </header>
   )

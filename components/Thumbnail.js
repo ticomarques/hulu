@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import { ThumbUpIcon } from '@heroicons/react/outline';
 
@@ -7,15 +7,14 @@ const  Thumbnail = ({result}) =>  {
 
   return (
     <div className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
-        <Image 
+        <img 
             layout="responsive"
             src={
                 `${BASE_URL}${result.backdrop_path || result.poster_path}` || 
                 `${BASE_URL}${result.poster_path}`
             }
-            height={1080}
-            width={1920}
             alt="algo"
+            className="w-480 h-270"
         />
         <div className="p-2">
             <p className="truncate max-w-md">{result.overview}</p>
