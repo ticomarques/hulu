@@ -16,7 +16,7 @@ function Header() {
             <HeaderItem title="ACCOUNT" Icon={UserIcon} />
         </div>
         <img 
-            src="https://links.papareact.com/ua6"
+            src="https://www.logo.wine/a/logo/Hulu/Hulu-Logo.wine.svg"
             alt="data"
             className="object-contain h-24 w-48"
         />
